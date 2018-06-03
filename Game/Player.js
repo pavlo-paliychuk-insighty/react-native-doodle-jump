@@ -46,9 +46,9 @@ class Player extends PhysicsNode {
     }
   }
 
-  jump = () => (this.velocity.y = Settings.jumpVelocity * -Settings.scale);
+  jump = () => (this.velocity.y = (Settings.jumpVelocity * 2) * -Settings.scale);
 
   jumpHigh = () =>
-    (this.velocity.y = Settings.springVelocity * -Settings.scale);
+    (this.velocity.y = Settings.springVelocity * 2 * -Settings.scale);
 }
 export default Player;
